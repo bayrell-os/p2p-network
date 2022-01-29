@@ -8,8 +8,8 @@
 python3 setup.py sdist bdist_wheel - Сборка пакета
 sudo python3 setup.py develop - Установка пакета для разработки
 sudo python3 setup.py develop -u - Uninstall
-sudo pip3 install dist/p2p_network-1.0.tar.gz - Установка пакета
-sudo pip3 uninstall p2p_network - Удаление пакета
+sudo pip3 install dist/game_network-0.1.tar.gz - Установка пакета
+sudo pip3 uninstall game_network - Удаление пакета
 python3 -m twine upload --repository pypi dist/* - Залить на сервер
 twine upload -r pypi dist/* - Новая команда залить в pypi
 
@@ -22,9 +22,9 @@ from setuptools import setup, find_packages
 from os.path import abspath, dirname, join
 
 setup(
-	name="p2p_network",
-	version="1.0",
-	description="P2P Network",
+	name="game_network",
+	version="0.1",
+	description="P2P Game Network",
 	long_description=open(join(abspath(dirname(__file__)), 'README.md'), encoding='utf-8').read(),
 	long_description_content_type='text/markdown',
 	license="GPL-3.0 License",
@@ -32,7 +32,7 @@ setup(
 	packages=find_packages(),
 	include_package_data = True,
 	scripts=[
-		'scripts/p2p_network'
+		'scripts/game_network'
 	],
 	install_requires=[
 		'PyQt5',
@@ -50,6 +50,6 @@ setup(
 		'Topic :: Utilities',
 	],
 	keywords = [
-		"p2p network", "peervpn"
+		"game network", "peervpn"
 	],
 )
