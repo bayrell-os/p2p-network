@@ -1,3 +1,5 @@
+peervpn/src/.git
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -11,6 +13,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+packages/
 downloads/
 eggs/
 .eggs/
